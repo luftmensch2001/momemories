@@ -1,11 +1,10 @@
 import React from "react";
-import Sidebar from "../../Components/Sidebar/Sidebar";
 import Newsfeed from "./Newsfeed";
+import "./Home.css";
 
 const Home = () => {
     return (
-        <div>
-            <Sidebar />
+        <div className="Home Content">
             <Newsfeed />
         </div>
     );

@@ -1,3 +1,92 @@
 .Newsfeed {
     height: 2000px;
+    width: 40%;
+    min-width: 470px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.Newsfeed .Post {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+
+.Newsfeed .Post .account {
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 8px;
+}
+
+.Newsfeed .Post .account:hover span {
+    opacity: 0.7;
+}
+
+.Newsfeed .Post .account img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.Newsfeed .Post .account span {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.Newsfeed .Post .image-post {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 16px;
+}
+.Newsfeed .Post .interactive {
+    margin-top: 8px;
+    display: flex;
+    gap: 12px;
+}
+.Newsfeed .Post .interactive .icon {
+    width: 28px;
+    height: 28px;
+    padding: 8px;
+    color: var(--text-color);
+}
+
+.Newsfeed .Post .interactive .icon:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.Newsfeed .Post .caption {
+    margin-top: 8px;
+    padding: 0 10px;
+}
+.Newsfeed .Post .caption .account-name {
+    text-decoration: none;
+}
+.Newsfeed .Post .caption .account-name span {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.Newsfeed .Post .caption .content {
+    margin: 8px 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.Newsfeed .Post .show-comments {
+    padding: 8px 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #848484;
+}
+
+.Newsfeed .Post .show-comments:hover {
+    cursor: pointer;
+    opacity: 0.8;
 }

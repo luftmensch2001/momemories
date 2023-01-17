@@ -10,20 +10,23 @@ import {
     BiAddToQueue,
     BiMenu,
 } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
     return (
         <div className="Sidebar">
-            <img className="logo" src={logo} alt="logo" />
+            <Link to="/">
+                <img className="logo" src={logo} alt="logo" />
+            </Link>
             <div className="menu-list">
-                <div className="menu-item active">
+                <Link to="/" className="menu-item active">
                     <BiHomeAlt className="icon" />
                     <span>Home</span>
-                </div>
-                <div className="menu-item">
+                </Link>
+                <Link to="/search" className="menu-item">
                     <BiSearch className="icon" />
                     <span>Search</span>
-                </div>
+                </Link>
                 <div className="menu-item">
                     <BiMessageRounded className="icon" />
                     <span>Message</span>

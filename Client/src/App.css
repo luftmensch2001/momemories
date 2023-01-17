@@ -23,3 +23,15 @@ html {
     font-size: 62.5%;
     box-sizing: border-box;
 }
+
+.App {
+    display: flex;
+}
+
+.Content {
+    margin-top: 50px;
+    margin-left: 250px;
+    display: flex;
+    justify-content: center;
+    width: calc(100vw - 250px);
+}

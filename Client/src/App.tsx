@@ -1,10 +1,12 @@
 import "./App.css";
-import Home from "./Features/Home/Home";
+import Sidebar from "./Components/Sidebar/Sidebar";
+import { Outlet } from "react-router-dom";
 
 function App() {
     return (
         <div className="App">
-            <Home />
+            <Sidebar />
+            <Outlet />
         </div>
     );
 }
